@@ -1,0 +1,46 @@
+<script type="module">
+import { bg, show } from "https://js.sabae.cc/egadv.js";
+
+await bg(3073);
+await show("のぐ:これって何?");
+await show("そーす:これは2年後の大阪だよ");
+await show("のぐ:本当に?");
+await show("のぐ:どうして知ってるの?");
+await show("そーす:カイトをフォローしてるから");
+await show("のぐ:え?ちょっと古くない?、、、");
+await show("のぐ:そんなことより何でこうなったん?");
+await show("そーす:それを知るためにここに来たんだよ");
+await bg(2898);
+await show("のぐ:あ、あそこになんかあるやん!");
+await show("そーす:うん、そうだね");
+
+let result;
+do {
+  result = await show("そーす:行ってみる?", "はい", "いいえ");
+  if (result === "いいえ") {
+    await show("そーす:本当にそれでいいの?");
+  }
+} while (result !== "はい");
+    await("そうだね、行ってみよう")
+await bg(4519)
+await show("のぐ:やっとついた〜");
+await show("そーす:意外と近かったね");
+await show("のぐ:なんか明かりがあるけど、、、人でもいるのかな?");
+await show("そーす:どうだろう");
+await show("のぐ:行ってみるか")
+await show("そーす:え、危なそうだよ");
+let choice = await show("のぐ:どうしよう", "誰かいるかもだし行ってみよう", "確かに、ここら辺でキャンプでもしよ!");
+
+if (choice === "いいじゃん行ってみよう") {
+  await show("そーす:よし、行ってみよう!");
+  await show("のぐ:ワクワクしてきた!");
+
+} else if (choice === "確かに、ここら辺でキャンプでもしよ!") {
+  await show("そーす:うん、いいね!");
+  await show("のぐ:よし、まずは焚き火したいから木を集めよう");
+  await show("そーす:焚き火はね、木だけじゃなくて、小枝とか、落ち葉、杉の葉、白樺の樹皮、松ぼっくりとかが良くて、火がつきやすい乾いていて、表面積が多い素材を使うと少ない火種でも炎を維持して広げることができるし、杉の葉、落ち葉、小枝は細くて乾いてればめっちゃ着きやすいんだよ")
+  await show("のぐ：お、おう。それじゃ集めてくるわ")
+
+}
+</script>
+</script>
