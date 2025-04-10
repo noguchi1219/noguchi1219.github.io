@@ -39,8 +39,9 @@ if (choice === "誰かいるかもだし行ってみよう") {
   await show("そーす:わかった、行こっか");
   await show("のぐ:ワクワクしてきた!");
   await show("横から出てきた民族の人に襲われた");
-  await bg(0)
-  await show("END...............");
+  await bg(0);
+await new Promise(r => setTimeout(r, 1000)); // 1秒待つ
+await show("END...............");
 } else if (choice === "確かに、ここら辺でキャンプでもしよ!") {
   await show("そーす:うん、いいね!");
   await show("のぐ:よし、まずは焚き火したいから木を集めよう");
