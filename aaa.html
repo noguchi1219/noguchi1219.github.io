@@ -13,6 +13,14 @@
     await show("そーす:これは2年後の大阪だよ");
     await show("のぐ:本当に?");
     await show("そーす:それを知るためにここに来たんだよ");
+    await show("のぐ:これって何?");
+　　　await show("そーす:これは2年後の大阪だよ");
+
+let result = await show("そーす:行ってみる?", "はい", "いいえ");
+if (result === "はい") {
+  await show("のぐ:うん、行ってみよう！");
+}
+
   </script>
 </body>
 </html>
